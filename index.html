@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Portfolio Landing Page</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css'>
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css'>
+  <link rel='stylesheet'
+    href='https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Poppins:wght@100;300;400;500;600;700;800;900&family=Ubuntu:wght@300;400;500;700&display=swap"rel="stylesheet'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css'>
+  <link rel="stylesheet" href="style.css" />
+
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+
+</head>
+
+<body>
+
+  <!-- 
+    - #PRELOADER
+  -->
+
+  <div class="preloader" data-preloader>
+    <span class="line"></span>
+  </div>
+  <div class="scroll-up-btn">
+    <i class="fas fa-angle-up"></i>
+  </div>
+  <!-- Header -->
+  <nav class="navbar">
+    <div class="max-width">
+      <div class="logo"><a href="#home">
+          <img src="./img/logo_portffolio.png" alt="Your Logo Alt Text" class="logoimg">
+        </a></div>
+      <ul class="menu">
+        <li><a href="#home" class="menu-btn"><strong>Accueil</strong></a></li>
+        <li><a href="#about" class="menu-btn"><strong>A propos</strong></a></li>
+        <li><a href="#projects" class="menu-btn"><strong>Projets</strong></a></li>
+        <li><a href="#contact" class="menu-btn"><strong>Contact</strong></a></li>
+      </ul>
+      <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Home -->
+  <section class="home" id="home">
+    <div class="max-width">
+      <div class="home-content">
+        <div class="text-2">BORGES AYMERIC</div>
+        <div class="text-3">ÉTUDIANT EN BUT MMI</div>
+        <div class="text-4"><span class="typing"></span></div>
+      </div>
+    </div>
+
+  </section>
+
+  <!--  About  -->
+  <section class="about" id="about">
+    <div class="max-width">
+      <h2 class="title">A propos de moi</h2>
+      <div class="about-content">
+        <div class="column left">
+          <img src="./img/aymeric.png" alt="Photo Aymeric BORGES" class="imgaymeric">
+        </div>
+        <div class="column right">
+          <div class="text">Je m'appelle BORGES Aymeric </div>
+          <p>Je suis un étudiant dynamique en deuxième année de Bachelor Universitaire de Technologie (BUT) Métiers du Multimédia et de l'Internet (MMI) à l'IUT de Rouen. Passionné par les nouvelles technologies et l'art, je m'investis dans des projets
+            personnels et collabore sur diverses initiatives pour affiner mes compétences techniques et créatives. À l'avenir, j'aimerais me spécialiser dans la communication.</p>
+          <br>
+          <div class="text">Pourquoi travailler avec moi ?</div>
+          <p>Je suis doté d'un esprit créatif, ayant le sens du relationnel et étant polyvalent dans tous les domaines du multimédia, je m'adapte à toute situation pour mener à bien les projets.</p>
+
+          <a href="./img/cv/CV_aymeric_borges.pdf" target="_blank" class="cv-link">Voir le CV <ion-icon
+              name="cloud-download-outline"></ion-icon></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Skills -->
+
+
+  <div class="logos">
+
+    <div class="logos-slide">
+      <img src="./img/creative-skills/photoshop.svg" alt="Photoshop" title="Photoshop">
+      <img src="./img/creative-skills/illustrator.svg" alt="illustrator" title="Illustrator">
+      <img src="./img/creative-skills/aftereffects.svg" alt="After Effects" title="After Effects">
+      <img src="./img/creative-skills/premiere_pro.svg" alt="Premiere Pro" title="Premiere Pro">
+      <img src="./img/creative-skills/audition.svg" alt="Audition" title="Audition">
+      <img src="./img/creative-skills/lightroom.svg" alt="lightroom" title="Lightroom">
+       <img src="./img/creative-skills/indesign.svg" alt="Indesign">
+      <img src="./img/creative-skills/blender.svg" alt="Blender" title="Blender">
+      <img src="./img/creative-skills/canva.svg" alt="Canva" title="Canva">
+      <img src="./img/creative-skills/figma.svg" alt="Figma" title="Figma">
+    </div>
+    <div class="logos-slide">
+      <img src="./img/creative-skills/photoshop.svg" alt="Photoshop" title="Photoshop">
+      <img src="./img/creative-skills/illustrator.svg" alt="illustrator" title="Illustrator">
+      <img src="./img/creative-skills/aftereffects.svg" alt="After Effects" title="After Effects">
+      <img src="./img/creative-skills/premiere_pro.svg" alt="Premiere Pro" title="Premiere Pro">
+      <img src="./img/creative-skills/audition.svg" alt="Audition" title="Audition">
+      <img src="./img/creative-skills/lightroom.svg" alt="lightroom" title="Lightroom">
+       <img src="./img/creative-skills/indesign.svg" alt="Indesign">
+      <img src="./img/creative-skills/blender.svg" alt="Blender" title="Blender">
+      <img src="./img/creative-skills/canva.svg" alt="Canva" title="Canva">
+      <img src="./img/creative-skills/figma.svg" alt="Figma" title="Figma">
+    </div>
+  </div>
+
+
+
+  <div class="logos">
+    <div class="logos-slide">
+      <img src="./img/developpement-skills/html.svg" alt="HTML" title="HTML5">
+      <img src="./img/developpement-skills/css.svg" alt="CSS" title="CSS3">
+      <img src="./img/developpement-skills/javascript.svg" alt="Javascript" title="Javascript">
+      <img src="./img/developpement-skills/php.svg" alt="PHP" title="PHP">
+      <img src="./img/developpement-skills/mysql.svg" alt="MYSQL" title="MySQL">
+      <img src="./img/developpement-skills/wordpress.svg" alt="Wordpress" title="Wordpress">
+      <img src="./img/developpement-skills/jquery.svg" alt="Jquery" title="Jquery">
+      <img src="./img/developpement-skills/bootstrap-5-1.svg" alt="Bootstrap" title="Bootstrap">
+      <img src="./img/developpement-skills/github.svg" alt="Github" title="Github">
+    </div>
+    <div class="logos-slide">
+      <img src="./img/developpement-skills/html.svg" alt="HTML" title="HTML5">
+      <img src="./img/developpement-skills/css.svg" alt="CSS" title="CSS3">
+      <img src="./img/developpement-skills/javascript.svg" alt="Javascript" title="Javascript">
+      <img src="./img/developpement-skills/php.svg" alt="PHP" title="PHP">
+      <img src="./img/developpement-skills/mysql.svg" alt="MYSQL" title="MySQL">
+      <img src="./img/developpement-skills/wordpress.svg" alt="Wordpress" title="Wordpress">
+      <img src="./img/developpement-skills/jquery.svg" alt="Jquery" title="Jquery">
+      <img src="./img/developpement-skills/bootstrap-5-1.svg" alt="Bootstrap" title="Bootstrap">
+      <img src="./img/developpement-skills/github.svg" alt="Github" title="Github">
+    </div>
+
+
+  </div>
+
+
+
+
+
+  </section>
+
+  <!--PORTFOLIO-->
+
+  <section class="portfolio">
+    <h2 class="title">MES PROJETS</h2>
+    <div class="projets">
+      <div class="container">
+        <div class="card">
+          <div class="front1"></div>
+          <div class="back">
+            <h2 class="h2back">DASHBOARD</h2>
+            <p class="pback">Projet de site Web de visualisation de données avec ChartJS, PHP, MySQL.</p>
+            <p class="pbackskills">Développement Web</p>
+
+
+            <button class="btn">Détails du projet<ion-icon name="arrow-down-outline"></ion-icon></button>
+
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="card">
+          <div class="front2"></div>
+          <div class="back">
+            <h2 class="h2back">LA FAUCHEUSE</h2>
+            <p class="pback">Projet de réalisation et mise en scène d'un court métrage dit "Film noir".</p>
+            <p class="pbackskills">Audiovisuel</p>
+            <button class="btn2">Détails du projet<ion-icon name="arrow-down-outline"></ion-icon></button>
+
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="card">
+          <div class="front3"></div>
+          <div class="back">
+            <h2 class="h2back">SPINE SKATEPARK</h2>
+            <p class="pback">Projet de création d'identité visuelle pour un skatepark .</p>
+            <p class="pbackskills">Design</p>
+
+            <button class="btn3">Détails du projet<ion-icon name="arrow-down-outline"></ion-icon></button>
+
+          </div>
+        </div>
+      </div>
+     <!-- <div class="container">
+        <div class="card">
+          <div class="front4"></div>
+          <div class="back">
+            <h2 class="h2back">DASHBOARD</h2>
+            <p class="pback">Projet de site Web de visualisation de données avec ChartJS, PHP, MySQL.</p>
+          </div>
+        </div>
+      </div>-->
+    </div>
+  </section>
+
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <div class="max-width">
+      <h2 class="title">CONTACT</h2>
+      <ul id="social">
+        <li>
+          <a href="https://github.com/borges-aymeric" class="github">
+            <i class="fa-brands fa-github"></i>
+            <span>GitHub</span> <!-- Nom du réseau -->
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/aymeric-borges-898825229/" class="linkedin">
+            <i class="fa-brands fa-linkedin-in"></i>
+            <span>LinkedIn</span> <!-- Nom du réseau -->
+          </a>
+        </li>
+        <li>
+          <a href="https://www.pinterest.com/" class="pinterest">
+            <i class="fa-brands fa-pinterest-p"></i>
+            <span>Pinterest</span> <!-- Nom du réseau -->
+          </a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/" class="youtube">
+            <i class="fa-brands fa-youtube"></i>
+            <span>YouTube</span> <!-- Nom du réseau -->
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/" class="instagram">
+            <i class="fa-brands fa-instagram"></i>
+            <span>Instagram</span> <!-- Nom du réseau -->
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/" class="twitter">
+            <i class="fa-brands fa-twitter"></i>
+            <span>Twitter</span> <!-- Nom du réseau -->
+          </a>
+        </li>
+      </ul>
+    </div>
+    <br><br>
+    <br>
+    <div id="button">
+      <button onclick="contactByEmail()" class="buttoncontact"> Me contacter </button>
+    
+    </div> 
+  </section>
+ 
+<script>function contactByEmail() {
+      // Remplacez 'votre@email.com' par votre adresse e-mail réelle
+      var emailAddress = 'aymeric.borges18.06@gmail.com';
+
+      // Remplacez 'Objet du message' par l'objet du message souhaité
+      var subject = '';
+
+      // Construire le lien mailto avec l'adresse e-mail et l'objet
+      var mailtoLink = 'mailto:' + emailAddress + '?subject=' + encodeURIComponent(subject);
+
+      // Ouvrir le client de messagerie par défaut avec le lien mailto
+      window.location.href = mailtoLink;
+    }</script>
+
+
+
+  <div class="mod-fond">
+    <div class="mod-container out">
+      <div class="close"><ion-icon name="close-outline" class="icon-modal"></ion-icon></div>
+      <h2>DASHBOARD</h2>
+      <hr class="hr"><br>
+      <p>Lors de ma deuxième année de Bachelor Universitaire de Technologie Métiers du Multimédia et de l'Internet, j'ai
+        été amené à réaliser une page web de dashboard (Tableau de bord en français), affichant des visualisations de
+        données à l'aide de graphiques interactif. Ce projet m'a permis de mettre en oeuvre des compétences de
+        traitement, et d'intégration de données afin d'avoir un affichage simple et compréhensible facilement. J'ai
+        également pu mettre en oeuvre des compétences de création de site web dynamiques, avec des intéraction
+        utilisateurs.</p>
+      <br>
+      <p>Les données correspondent à la consommation et production d'énergie, de la région Grand-Est, et du département
+        de l'Ardennes. Le site à été réalisé principalement en PHP, MySQL, stylisée avec du CSS. Les graphiques sont
+        réalisé à l'aide d'une bibliothéque JavaScript nommée Chart.JS.</p>
+        <br>
+        <h3>Dashboard final</h3>
+
+      
+      <img src="./img/projet1/dashboard.png" width="750px" height="400px" alt=""class="imgprojet">
+      <br> <br>
+      <h3>Base de données</h3>
+
+      <img src="./img/projet1/bdd.png" width="750px" height="400px" alt=""class="imgprojet">
+
+    </div>
+  </div>
+  <div class="mod-fond2">
+    <div class="mod-container2 out">
+      <div class="close"><ion-icon name="close-outline" class="icon-modal"></ion-icon></div>
+      <h2>La Faucheuse</h2>
+      <hr class="hr"><br>
+      <p>Durant ma première année de Bachelor Universitaire de Technologie Métiers du Multimédia et de l'Internet, j'ai
+        été amené à réaliser et mettre en scène un court métrage, sous le nom de "Film noir".</p>
+      <br>
+      <p>
+        Ce projet m'a permis de mettre en oeuvre les compétences audiovisuelle que j'ai acquérie dans la première partie
+        de l'année, que ce soit la prise d'image et de son, l'organisation du tournage, l'écriture, le storytelling mais
+        également le montage vidéo.</p>
+      <a href="https://youtu.be/YW9yDThQuW8" class="aprojet">Voir la vidéo</a>
+      <img src="./img/projet3.png" alt="" width="500px" height="400px" class="imgprojet">
+
+    </div>
+  </div>
+  <div class="mod-fond3">
+    <div class="mod-container3 out">
+      <div class="close"><ion-icon name="close-outline" class="icon-modal"></ion-icon></div>
+      <h2>SPINE SKATEPARK</h2>
+      <hr class="hr"><br>
+      <p>Dignissim integer ut convallis nisl bibendum parturient vivamus leo sociis malesuada consectetur nullam a
+        tincidunt ullamcorper a eros molestie phasellus nec nostra velit mi leo orci a convallis torquent.Nunc a dapibus
+        mi hac at a libero eu lectus inceptos a viverra at feugiat. Dignissim integer ut convallis nisl bibendum
+        parturient vivamus leo sociis malesuada consectetur nullam a tincidunt ullamcorper a eros molestie phasellus nec
+        nostra velit mi leo orci a convallis torquent.Nunc a dapibus mi hac at a libero eu lectus inceptos a viverra at
+        feugiat.</p>
+        <br>
+        <h3>Photo retouchés avec Photoshop</h3>
+        <br><br>
+      <img src="./img/projet2/photo1.jpg" width="700px" height="400px" alt="" class="imgprojet">
+      <img src="./img/projet2/photo2.jpg" width="700px" height="375px" alt="" class="imgprojet">
+      <img src="./img/projet2/photo3.jpg" width="700px" height="400px" alt="" class="imgprojet">
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <span>
+      <a href="#">Borges Aymeric</a> | <span class="far fa-copyright"></span> 2024 tous droits réservés.
+    </span>
+  </footer>
+  <script src='https://kit.fontawesome.com/3b57a2a2a7.js'></script>
+  <script src='https://code.jquery.com/jquery-3.5.1.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js'></script>
+  <script src="https://unpkg.com/gsap@3.10.1/dist/gsap.min.js"></script>
+  <script src="https://unpkg.com/gsap@3.10.1/dist/ScrollTrigger.min.js"></script>
+
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
