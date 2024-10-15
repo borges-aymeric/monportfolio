@@ -1,3 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Bebas+Neue&family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&display=swap');
 :root {
 
 
@@ -55,12 +59,6 @@
   /* font weight */
   --weight-regular: 400;
   --weight-medium: 500;
-
-  /**
-     * SPACING
-     */
-
-  --section-spacing: 70px;
 
   /**
      * BORDER RADIUS
@@ -243,12 +241,24 @@ footer {
 section .title {
   position: relative;
   text-align: center;
-  font-size: 40px;
-  font-weight: 500;
+  font-size: 70px;
   margin-bottom: 60px;
   padding-bottom: 20px;
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Bebas Neue", sans-serif;
 }
+
+.title-projet{
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 40px;
+  text-align: center;
+}
+.text-projet{
+  font-family: "Noto Sans Display", sans-serif;
+  text-align: justify;
+
+}
+
+
 
 section .title::before {
   content: "";
@@ -328,7 +338,7 @@ section .title::after {
 }
 
 .navbar.sticky .menu li a:hover {
-  color: #fff;
+  color: #e02;
 }
 
 /*  Menu Btn  */
@@ -382,8 +392,7 @@ section .title::after {
 
 .max-width {
   width: 100%;
-  max-width: none; /* Supprime la restriction de largeur maximale */
-}
+  max-width: none; }
 
 .home .max-width .row {
   margin-right: 0;
@@ -398,6 +407,7 @@ section .title::after {
   margin-top: 0;
   transition: transform 0.5s ease-in-out;
   text-decoration: underline;
+  text-decoration-color: red;
 }
 
 .home .home-content .text-2 {
@@ -458,7 +468,9 @@ section .title::after {
   right: 300px;
   top: 200px;
   position: relative;
-  border: 2px solid #020202;
+  border: 3px solid #020202;
+  box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+
 }
 
 .about .about-content .right {
@@ -499,6 +511,7 @@ section .title::after {
 .about .about-content .right a:hover {
   box-shadow: inset 0px -3.5em 0px 0px #e02;
 }
+
 
 .cv-link ion-icon {
   transition: transform 0.3s ease-in-out;
@@ -594,7 +607,7 @@ section .title::after {
   transform-style: preserve-3d;
 }
 
-.front1,.front2,.front3,.front4,
+.front1,.front2,.front3,.front4,.front5,.front6,
 .back {
   height: 100%;
   width: 100%;
@@ -604,48 +617,57 @@ section .title::after {
   backface-visibility: hidden;
 }
 
-.front1 {
-  background-image: url(./img/projet1.png);
+.front1,.front2,.front3,.front4,.front5,.front6
+{
   background-repeat: no-repeat;
   background-size: 500px 400px;
   background-position: center;
-  background-color: lightcoral;
+  background-color: rgb(247, 242, 242);
+}
+.front1 {
+  background-image: url(./img/projet1.png);
 }
 .front2 {
   background-image: url(./img/projet3.png);
-  background-repeat: no-repeat;
-  background-size: 500px 400px;
-  background-position: center;
-  background-color: lightcyan;
 }
 .front3 {
   background-image: url(./img/projet2.png);
-  background-repeat: no-repeat;
-  background-size: 500px 400px;
-  background-position: center;
-  background-color: lightgreen;
 }
 .front4 {
-  background-image: url(./img/projet2.png);
-  background-repeat: no-repeat;
-  background-size: 500px 400px;
-  background-position: center;
-  background-color: lightpink;
+  background-image: url(./img/projet4.png);
+}
+.front5 {
+  background-image: url(./img/projet5.png);
+}
+.front6 {
+  background-image: url(./img/projet7.png);
+}
+.imgbugtracker{
+  border-radius: 5px;
+  box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
 }
 
-
 .back {
-  background-color: #000;
+  background-color: rgb(247, 242, 242);;
   transform: rotateY(180deg);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 5px;
+  padding: 35px;
 }
-.h2back,.pback{
-  color: white;
+.h2back{
+  color: #010101;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 35px;
 }
+.pback{
+  color: #010101;
+ font-family: "Noto Sans Display", sans-serif;
+  text-align: justify;
+}
+
 .projets {
   max-width: 1200px;
   margin: 0 auto;
@@ -655,6 +677,23 @@ section .title::after {
   padding: 20px;
   justify-content: center;
 }
+
+.image-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* 3 colonnes de taille minimum 300px */
+  gap: 20px; /* Espacement entre les images */
+  justify-items: center; /* Centrer les images */
+  align-items: start;
+}
+
+/* Assurez-vous que les images prennent toute la largeur possible dans la colonne */
+.image-grid img, video {
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Ajuste l'image pour remplir l'espace si nécessaire */
+}
+
 
 /*.portfolio{
   
@@ -702,9 +741,12 @@ section .title::after {
   opacity: 1; /* Afficher les détails lors du survol */
 }
 
+.button-container {
+  display: flex;             
+}
+
 .aprojet{
   color: black;
-  border: 2px solid black;
   padding: 10px;
   border-radius: 50px;
   margin: 15px;
@@ -714,7 +756,7 @@ section .title::after {
 
 
 /*MODAL*/
-.mod-fond, .mod-fond2, .mod-fond3 {
+.mod-fond, .mod-fond2, .mod-fond3, .mod-fond4, .mod-fond5, .mod-fond6{
   position: fixed;
   top: 0;
   left: 0;
@@ -723,6 +765,7 @@ section .title::after {
   background: rgba(0, 0, 0, 0.7);
   display: none;
   overflow-y: scroll;
+  z-index: 9999999999;
 }
 
 .hr{
@@ -730,15 +773,14 @@ section .title::after {
   width: 70%;
 }
 
-.mod-container, .mod-container2, .mod-container3 {
+.mod-container, .mod-container2, .mod-container3, .mod-container4, .mod-container5, .mod-container6 {
   position: relative;
   width: 70%;
   background: whitesmoke;
   border-radius: 20px;
-  padding: 20px;
   margin-top: 100px;
   z-index: 100;
-  padding: 70px;
+  padding: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -767,19 +809,76 @@ section .title::after {
   transition: all 0.4s;
 }
 
-.btn, .btn2, .btn3 {
-  border-radius: 20px;
+.btn, .btn2, .btn3, .btn4, .btn5, .btn6, .btn-video{ 
   padding: 10px;
+  border: 2px solid black;
+  background-color: rgb(247, 242, 242);
+  color: black;
+  font-size: 20px;
   cursor: pointer;
-  font-size: 18px;
+  border-radius: 30px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: color 0.4s ease;
 }
 
-.pbackskills{
+.btn::before, .btn2::before, .btn3::before, .btn4::before, .btn5::before, .btn6::before, .btn-video::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: black;
+  transition: width 0.4s ease;
+  z-index: -1;
+}
+
+.btn:hover::before, .btn2:hover::before, .btn3:hover::before, .btn4:hover::before, .btn5:hover::before, .btn6:hover::before, .btn-video:hover::before{
+  width: 100%;
+}
+
+.btn:hover, .btn2:hover, .btn3:hover, .btn4:hover, .btn5:hover, .btn6:hover, .btn-video:hover {
   color: white;
-  border: 2px solid white;
-  padding: 7px;
-  border-radius: 50px;
+}
+
+
+.pbackskills-dev{
+  color: #010101;
+  background-color: rgba(85, 122, 255, 0.538);
+  border: 2px solid #010101;
+  padding: 5px;
   margin: 15px;
+  font-family: "Noto Sans Display", sans-serif;
+  font-style: italic;
+  border-top-right-radius: 10px; 
+  border-bottom-left-radius: 10px; 
+
+}
+.pbackskills-crea{
+  color: #010101;
+  background-color: rgba(255, 85, 85, 0.538);
+  border: 2px solid #010101;
+  padding: 5px;
+  margin: 15px;
+  font-family: "Noto Sans Display", sans-serif;
+  font-style: italic;
+  border-top-right-radius: 10px; 
+  border-bottom-left-radius: 10px; 
+
+}
+.pbackskills-audio{
+  color: #010101;
+  background-color: rgba(136, 255, 85, 0.538);
+  border: 2px solid #010101;
+  padding: 5px;
+  margin: 15px;
+  font-family: "Noto Sans Display", sans-serif;
+  font-style: italic;
+  border-top-right-radius: 10px; 
+  border-bottom-left-radius: 10px; 
+
 }
 
 .icon-modal{
@@ -789,6 +888,11 @@ section .title::after {
   border-radius: 20px;
 }
 
+.imgprojet{
+  box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+
+}
+
 
 
 /*  Contact  */
@@ -796,76 +900,76 @@ section .title::after {
 
 #social {
   display: flex;
-  justify-content: center; /* Centre les éléments horizontalement */
+  justify-content: center;
   padding: 0;
   list-style: none;
-  margin-top: 20px; /* Ajustez selon votre design */
+  margin-top: 20px;
 }
 
 #social li {
-  margin: 0 15px; /* Ajuste l'espacement entre les icônes */
-  position: relative; /* Nécessaire pour le positionnement des éléments */
+  margin: 0 15px;
+  position: relative;
 }
 
 #social li a {
   display: flex;
-  align-items: center; /* Centre verticalement le contenu */
-  justify-content: center; /* Centre horizontalement le contenu */
-  width: 50px; /* Largeur du rond */
-  height: 50px; /* Hauteur du rond */
-  border-radius: 50%; /* Crée le rond */
-  background-color: #333; /* Couleur de fond par défaut des ronds */
-  color: #fff; /* Couleur des icônes et du texte */
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #333;
+  color: #fff;
   text-decoration: none;
-  font-size: 24px; /* Taille des icônes */
-  transition: all 0.3s ease; /* Animation pour les transitions */
-  overflow: hidden; /* Cache tout ce qui dépasse du rond */
+  font-size: 24px;
+  transition: all 0.3s ease;
+  overflow: hidden;
 }
 
 #social li a i {
-  line-height: 50px; /* Centre verticalement l'icône */
+  line-height: 50px;
 }
 
 #social li a span {
-  display: none; /* Cache le texte par défaut */
-  margin-left: 10px; /* Espacement entre le rond et le texte */
-  font-size: 14px; /* Taille du texte */
-  color: #fff; /* Couleur du texte */
+  display: none;
+  margin-left: 10px;
+  font-size: 14px;
+  color: #fff;
 }
 
 #social li a:hover {
-  width: 150px; /* Largeur du rond élargi */
-  height: 50px; /* Hauteur du rond inchangée */
-  border-radius: 25px; /* Change le rond en ovale */
-  transform: translateY(-15px); /* Lève le rond de 15px lors du survol */
+  width: 150px;
+  height: 50px;
+  border-radius: 25px;
 }
 
 #social li a:hover span {
   display: inline;
-  transition: opacity 0.3s ease; /* Animation pour l'apparition du texte */
+  transition: opacity 0.3s ease;
 }
 
 #social li a.github {
-  background-color: #333; /* Couleur de fond pour GitHub */
+  background-color: #333;
 }
 
 #social li a.linkedin {
-  background-color: #0077b5; /* Couleur de fond pour LinkedIn */
+  background-color: #0077b5;
 }
+
 #social li a.pinterest {
-  background-color: #e60023; /* Couleur de fond pour Pinterest */
+  background-color: #e60023;
 }
 
 #social li a.youtube {
-  background-color: #ff0000; /* Couleur de fond pour YouTube */
+  background-color: #ff0000;
 }
 
 #social li a.instagram {
-  background-color: #e4405f; /* Couleur de fond pour Instagram */
+  background-color: #e4405f;
 }
 
 #social li a.twitter {
-  background-color: #1da1f2; /* Couleur de fond pour Twitter */
+  background-color: #1da1f2;
 }
 
 
@@ -873,8 +977,8 @@ section .title::after {
 
 #button {
   display: flex;
-  justify-content: center;  /* Centre le bouton horizontalement */
-  margin-top: 30px;         /* Ajoute un espace au-dessus du bouton */
+  justify-content: center;  
+  margin-top: 30px;        
 }
 
 .buttoncontact {
@@ -914,8 +1018,8 @@ section .title::after {
 /*FOOTER*/
 
 footer {
-  background-color: #010100;            /* Fond sombre */
-  padding: 20px 0;                   /* Espace autour du contenu */
+  background-color: #010100;          
+  padding: 20px 0;                   
   color: white;                      /* Texte en blanc */
   text-align: center;                /* Centre le texte */
   font-size: 14px;                   /* Taille du texte */
@@ -1183,7 +1287,7 @@ footer::before {
   }
  
   
-  .front4, .front3, .front2, .front1 {
+  .front6,.front5,.front4, .front3, .front2, .front1 {
     background-size: 300px 225px;
   }
  
@@ -1211,10 +1315,13 @@ footer::before {
 @media (max-width: 426px) {
   .home {
     height: 100vh;
-    min-height: 500px; /* Ce style est redondant avec height: 100vh, vous pouvez le retirer si vous voulez 100vh uniquement */
+    min-height: 500px; 
   }
   body{
     width: 100%;
+  }
+  section .title{
+    font-size: 45px ;
   }
 }
 

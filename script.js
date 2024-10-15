@@ -118,6 +118,18 @@ $('.btn3').click(function () {
   $('.mod-fond3').fadeIn(200);
   $('.mod-container3').removeClass('out').addClass('in');
 });
+$('.btn4').click(function () {
+  $('.mod-fond4').fadeIn(200);
+  $('.mod-container4').removeClass('out').addClass('in');
+});
+$('.btn5').click(function () {
+  $('.mod-fond5').fadeIn(200);
+  $('.mod-container5').removeClass('out').addClass('in');
+});
+$('.btn6').click(function () {
+  $('.mod-fond6').fadeIn(200);
+  $('.mod-container6').removeClass('out').addClass('in');
+});
 
 // Fermer la modale
 $('.close, .mod-fond').click(function () {
@@ -134,6 +146,18 @@ $('.close, .mod-fond3').click(function () {
   $('.mod-fond3').fadeOut(200);
   $('.mod-container3').removeClass('in').addClass('out');
 });
+$('.close, .mod-fond4').click(function () {
+  $('.mod-fond4').fadeOut(200);
+  $('.mod-container4').removeClass('in').addClass('out');
+});
+$('.close, .mod-fond5').click(function () {
+  $('.mod-fond5').fadeOut(200);
+  $('.mod-container5').removeClass('in').addClass('out');
+});
+$('.close, .mod-fond6').click(function () {
+  $('.mod-fond6').fadeOut(200);
+  $('.mod-container6').removeClass('in').addClass('out');
+});
 
   ////////////////////////////////////////////////
   gsap.from(".title", {
@@ -142,3 +166,4 @@ $('.close, .mod-fond3').click(function () {
     duration: 1, // Durée de l'animation en secondes
     ease: "power2.out" // Fonction d'accélération pour l'animation
   });
+
