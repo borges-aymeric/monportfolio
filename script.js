@@ -130,6 +130,14 @@ $('.btn6').click(function () {
   $('.mod-fond6').fadeIn(200);
   $('.mod-container6').removeClass('out').addClass('in');
 });
+$('.btn7').click(function () {
+  $('.mod-fond7').fadeIn(200);
+  $('.mod-container7').removeClass('out').addClass('in');
+});
+$('.btn8').click(function () {
+  $('.mod-fond8').fadeIn(200);
+  $('.mod-container8').removeClass('out').addClass('in');
+});
 
 // Fermer la modale
 $('.close, .mod-fond').click(function () {
@@ -158,6 +166,14 @@ $('.close, .mod-fond6').click(function () {
   $('.mod-fond6').fadeOut(200);
   $('.mod-container6').removeClass('in').addClass('out');
 });
+$('.close, .mod-fond7').click(function () {
+  $('.mod-fond7').fadeOut(200);
+  $('.mod-container7').removeClass('in').addClass('out');
+});
+$('.close, .mod-fond8').click(function () {
+  $('.mod-fond8').fadeOut(200);
+  $('.mod-container8').removeClass('in').addClass('out');
+});
 
   ////////////////////////////////////////////////
   gsap.from(".title", {
@@ -167,3 +183,4 @@ $('.close, .mod-fond6').click(function () {
     ease: "power2.out" // Fonction d'accélération pour l'animation
   });
 
+  
